@@ -305,6 +305,7 @@ endif
 ifeq ($(DEBUG),1)
 override ASFLAGS += --defsym DEBUG=1
 override CPPFLAGS += -D DEBUG=1
+override CFLAGS += -D DEBUG=1
 endif
 
 # The dep rules have to be explicit or else missing files won't be reported.
