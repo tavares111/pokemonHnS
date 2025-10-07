@@ -2,6 +2,7 @@ const u16 gMetatiles_General[] = INCBIN_U16("data/tilesets/primary/general/metat
 const u16 gMetatileAttributes_General[] = INCBIN_U16("data/tilesets/primary/general/metatile_attributes.bin");
 
 const u16 gMetatiles_General_Frontier[] = INCBIN_U16("data/tilesets/primary/general_frontier_west/metatiles.bin");
+const u16 gMetatileAttributes_General_Frontier[] = INCBIN_U16("data/tilesets/primary/general_frontier_west/metatile_attributes.bin");
 
 const u16 gMetatiles_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatiles.bin");
 const u16 gMetatileAttributes_Petalburg[] = INCBIN_U16("data/tilesets/secondary/petalburg/metatile_attributes.bin");

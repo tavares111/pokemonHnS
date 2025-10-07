@@ -31,9 +31,9 @@ const struct Tileset gTileset_General_Frontier_East =
     //.swapPalettes = SWAP_PAL(4),
     .isSecondary = FALSE,
     .tiles = gTilesetTiles_General_Frontier_East,
-    .palettes = gTilesetPalettes_General,
+    .palettes = gTilesetPalettes_General_Frontier,
     .metatiles = gMetatiles_General_Frontier,
-    .metatileAttributes = gMetatileAttributes_General,
+    .metatileAttributes = gMetatileAttributes_General_Frontier,
     .callback = InitTilesetAnim_HoennGeneral,
 };
 
@@ -43,9 +43,9 @@ const struct Tileset gTileset_General_Frontier_West =
     //.swapPalettes = SWAP_PAL(4),
     .isSecondary = FALSE,
     .tiles = gTilesetTiles_General_Frontier_West,
-    .palettes = gTilesetPalettes_General,
+    .palettes = gTilesetPalettes_General_Frontier,
     .metatiles = gMetatiles_General_Frontier,
-    .metatileAttributes = gMetatileAttributes_General,
+    .metatileAttributes = gMetatileAttributes_General_Frontier,
     .callback = InitTilesetAnim_HoennGeneral,
 };
 
