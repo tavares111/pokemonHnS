@@ -1485,7 +1485,7 @@ const u16 ALIGNED(4) gTilesetPalettes_General[][16] =
     INCBIN_U16("data/tilesets/primary/general/palettes/15.gbapal"),
 };
 
-const u16 ALIGNED(4) gTilesetPalettes_General_Frontier[][16] =
+const u16 ALIGNED(4) gTilesetPalettes_General_Frontier_West[][16] =
 {
     INCBIN_U16("data/tilesets/primary/general_frontier_west/palettes/00.gbapal"),
     INCBIN_U16("data/tilesets/primary/general_frontier_west/palettes/01.gbapal"),
@@ -1503,6 +1503,26 @@ const u16 ALIGNED(4) gTilesetPalettes_General_Frontier[][16] =
     INCBIN_U16("data/tilesets/primary/general_frontier_west/palettes/13.gbapal"),
     INCBIN_U16("data/tilesets/primary/general_frontier_west/palettes/14.gbapal"),
     INCBIN_U16("data/tilesets/primary/general_frontier_west/palettes/15.gbapal"),
+};
+
+const u16 ALIGNED(4) gTilesetPalettes_General_Frontier_East[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_frontier_east/palettes/15.gbapal"),
 };
 
 const u32 gTilesetTiles_General[] = INCBIN_U32("data/tilesets/primary/general/tiles.4bpp.lz");
