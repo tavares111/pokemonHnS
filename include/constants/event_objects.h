@@ -52,7 +52,7 @@
 #define OBJ_EVENT_GFX_GENTLEMAN                   48
 #define OBJ_EVENT_GFX_SAILOR                      49
 #define OBJ_EVENT_GFX_FISHER                   50
-#define OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M        51
+#define OBJ_EVENT_GFX_SCOTT        51
 #define OBJ_EVENT_GFX_BATTLE_GIRL        52
 #define OBJ_EVENT_GFX_ENGINEER                     53
 #define OBJ_EVENT_GFX_BURGLAR                     54
