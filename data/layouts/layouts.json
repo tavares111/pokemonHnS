@@ -2656,8 +2656,8 @@
       "name": "BattleElevator_Layout",
       "width": 5,
       "height": 7,
-      "primary_tileset": "gTileset_Johto_Building",
-      "secondary_tileset": "gTileset_GoldenrodUndergroundRocket",
+      "primary_tileset": "gTileset_Building_Frontier",
+      "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/BattleElevator/border.bin",
       "blockdata_filepath": "data/layouts/BattleElevator/map.bin"
     },
@@ -4136,7 +4136,7 @@
       "name": "TrainerHill_Entrance_Layout",
       "width": 19,
       "height": 17,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_Entrance/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_Entrance/map.bin"
@@ -4146,7 +4146,7 @@
       "name": "TrainerHill_1F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_1F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_1F/map.bin"
@@ -4156,7 +4156,7 @@
       "name": "TrainerHill_2F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_2F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_2F/map.bin"
@@ -4166,7 +4166,7 @@
       "name": "TrainerHill_3F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_3F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_3F/map.bin"
@@ -4176,7 +4176,7 @@
       "name": "TrainerHill_4F_Layout",
       "width": 16,
       "height": 21,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_4F/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_4F/map.bin"
@@ -4186,7 +4186,7 @@
       "name": "TrainerHill_Roof_Layout",
       "width": 25,
       "height": 16,
-      "primary_tileset": "gTileset_Building",
+      "primary_tileset": "gTileset_Building_TrainerHill",
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_Roof/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_Roof/map.bin"

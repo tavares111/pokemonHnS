@@ -14,15 +14,15 @@
 #define METATILE_BattleFrontier_CorridorOpenDoor_Top     0x207
 #define METATILE_BattleFrontier_Door_Elevator            0x20E
 #define METATILE_BattleFrontier_Door_MultiCorridor       0x2AD
-#define METATILE_BattleFrontier_Elevator_Bottom0         0x339
-#define METATILE_BattleFrontier_Elevator_Bottom1         0x33A
-#define METATILE_BattleFrontier_Elevator_Bottom2         0x33B
-#define METATILE_BattleFrontier_Elevator_Mid0            0x331
-#define METATILE_BattleFrontier_Elevator_Mid1            0x332
-#define METATILE_BattleFrontier_Elevator_Mid2            0x015
-#define METATILE_BattleFrontier_Elevator_Top0            0x329
-#define METATILE_BattleFrontier_Elevator_Top1            0x33C
-#define METATILE_BattleFrontier_Elevator_Top2            0x32A
+#define METATILE_BattleFrontier_Elevator_Bottom0         0x3B9
+#define METATILE_BattleFrontier_Elevator_Bottom1         0x3BA
+#define METATILE_BattleFrontier_Elevator_Bottom2         0x3BB
+#define METATILE_BattleFrontier_Elevator_Mid0            0x3B1
+#define METATILE_BattleFrontier_Elevator_Mid1            0x3B2
+#define METATILE_BattleFrontier_Elevator_Mid2            0x3B3
+#define METATILE_BattleFrontier_Elevator_Top0            0x3A9
+#define METATILE_BattleFrontier_Elevator_Top1            0x3AA
+#define METATILE_BattleFrontier_Elevator_Top2            0x3AB
 
 // gTileset_BattleFrontierOutsideEast
 #define METATILE_BattleFrontierOutsideEast_Door              0x3F3
@@ -800,10 +800,10 @@
 #define METATILE_SootopolisGym_Stairs       0x207
 
 // gTileset_TrainerHill
-#define METATILE_TrainerHill_CounterDoor          0x334
-#define METATILE_TrainerHill_Door_Elevator_Lobby  0x32C
-#define METATILE_TrainerHill_Door_Elevator_Roof   0x383
-#define METATILE_TrainerHill_GreenFloorTile       0x307
+#define METATILE_TrainerHill_CounterDoor          0x3B4
+#define METATILE_TrainerHill_Door_Elevator_Lobby  0x3AC
+#define METATILE_TrainerHill_Door_Elevator_Roof   0x3F8
+#define METATILE_TrainerHill_GreenFloorTile       0x387
 
 // gTileset_TrickHousePuzzle
 #define METATILE_TrickHousePuzzle_Arrow_RedOnBlack_Down       0x263

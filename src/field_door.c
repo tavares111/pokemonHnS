@@ -366,7 +366,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_BattleFrontierOutsideWest_Door_Sliding,       DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_BattleFrontierSliding, sDoorAnimPalettes_BattleFrontier_Sliding},
     {METATILE_BattleDome_Door_PreBattleRoom,                DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_BattleDomePreBattleRoom, sDoorAnimPalettes_BattleDomePreBattleRoom},
     {METATILE_BattleTent_Door,                              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_BattleTentInterior, sDoorAnimPalettes_BattleTentInterior},
-    {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
+    {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_Johto_General_Door,                           DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_General, sDoorAnimPalettes_General},
     {METATILE_Johto_General_Door_Sliding,                   DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_PokeCenter, sDoorAnimPalettes_PokeCenter},
     {METATILE_Johto_General_Door_Gym,                       DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_Gym, sDoorAnimPalettes_Gym},
@@ -398,6 +398,7 @@ static const struct DoorGraphics sDoorGraphics[] =
     {METATILE_PalletTown_Door_Green,                    DOOR_SOUND_NORMAL, DOOR_SIZE_1x1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_OaksLabDoor},
     {METATILE_BattleFrontierOutsideEast_Door,               DOOR_SOUND_NORMAL,  DOOR_SIZE_1x2, sDoorAnimTiles_BattleFrontier, sDoorAnimPalettes_BattleFrontier},
     {METATILE_BattleFrontierOutsideEast_Door_Sliding,       DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_BattleFrontierSliding, sDoorAnimPalettes_BattleFrontier_Sliding},
+    {METATILE_TrainerHill_Door_Elevator_Roof,              DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {},
 };
 
