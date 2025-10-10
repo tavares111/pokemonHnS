@@ -110,6 +110,22 @@ BattleFrontier_OutsideWest_EventScript_Boy1::
 	msgbox BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends, MSGBOX_NPC
 	end
 
+BattleFrontier_OutsideWest_EventScript_Engineer::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer2::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations2, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer3::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations3, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer4::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations4, MSGBOX_NPC
+	end
+
 BattleFrontier_OutsideWest_EventScript_Fisherman2::
 	lock
 	faceplayer
@@ -526,3 +542,30 @@ BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "Oh, challenges can wait. I feel driven\n"
 	.string "to find the delightful creature!$"
 
+BattleFrontier_OutsideWest_Text_Reparations:
+    .string "Careful there!\p"
+    .string "The cave below the BATTLE FRONTIER\n"
+    .string "collapsed not long ago.\p"
+    .string "We’re reinforcing the structure so it\n"
+    .string "won’t happen again.\p"
+    .string "Until repairs are finished, you’ll need\n"
+    .string "to move around using wooden bridges.$"
+
+BattleFrontier_OutsideWest_Text_Reparations2:
+    .string "Watch your step!\p"
+    .string "We’re still fixing the damage from\n"
+    .string "the cave collapse.\p"
+    .string "These wooden bridges are just\n"
+    .string "temporary, so be careful!$"
+
+BattleFrontier_OutsideWest_Text_Reparations3:
+    .string "Ugh… Another day of repairs.\n"
+    .string "That cave collapse caused a mess.\p"
+    .string "I just hope these supports hold\n"
+    .string "until we finish the job.$"
+
+BattleFrontier_OutsideWest_Text_Reparations4:
+    .string "These MACHOKE and MACHAMP are a\n"
+    .string "huge help with the repairs!\p"
+    .string "Without them, rebuilding after the\n"
+    .string "collapse would take forever!$"

@@ -67,6 +67,42 @@ BattleFrontier_OutsideEast_EventScript_Cook::
 	release
 	end
 
+BattleFrontier_OutsideWest_EventScript_Engineer5::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations5, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer6::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations6, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer7::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations7, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_EventScript_Engineer8::
+	msgbox BattleFrontier_OutsideWest_Text_Reparations8, MSGBOX_NPC
+	end
+
+BattleFrontier_OutsideWest_Text_Reparations5:
+	.string "We’re almost done with the repairs.\p"
+    .string "MACHAMP’s been a huge help\n"
+    .string "lifting the heavier rocks.$"
+
+BattleFrontier_OutsideWest_Text_Reparations6:
+    .string "Watch your step!\n"
+    .string "The ground’s still unstable here.\p"
+    .string "Good thing the MACHOKE team’s been\n"
+    .string "helping us clear the debris.$"
+
+BattleFrontier_OutsideWest_Text_Reparations7:
+    .string "Those wooden bridges are the only\n"
+    .string "way across while we finish repairs.$"
+
+BattleFrontier_OutsideWest_Text_Reparations8:
+    .string "The cave’s still unstable, so we built\n"
+    .string "temporary wooden bridges.\p"
+    .string "They’re sturdy… I think.$"
+
 BattleFrontier_OutsideEast_EventScript_Zigzagoon::
 	lock
 	faceplayer
