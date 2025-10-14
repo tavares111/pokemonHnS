@@ -980,6 +980,12 @@ u8 LoadGameSave(u8 saveType)
         }
         gSaveBlock1Ptr->versionId = 5;
     }
+    if (gSaveBlock1Ptr->versionId <6){
+        if(VarGet(VAR_ECRUTEAK_CITY_THEATER)==7){
+            VarSet(VAR_ECRUTEAK_CITY_THEATER, 8);
+        }
+        gSaveBlock1Ptr->versionId = 6;
+    }
     return status;
 }
 
