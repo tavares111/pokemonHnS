@@ -545,12 +545,14 @@ BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
 	.string "BATTLE DOME every day now.$"
 
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
-	.string "I heard a rumor that someone saw\n"
-	.string "a POKéMON with an unusually long tail\l"
-	.string "somewhere in the BATTLE FRONTIER.\p"
-	.string "It must be adorable. I'm sure of it…\p"
-	.string "Oh, challenges can wait. I feel driven\n"
-	.string "to find the delightful creature!$"
+	.string "Until just a few weeks ago, there used to\n"
+	.string "be a cave here in the BATTLE FRONTIER!\p"
+	.string "Inside, you could find strange POKéMON\n"
+	.string "with unusually long tails!\p"
+	.string "But not long ago, the cave suddenly\n"
+	.string "collapsed for no clear reason…\p"
+	.string "I can’t help but wonder what became\n"
+	.string "of those poor creatures…$"
 
 BattleFrontier_OutsideWest_Text_Reparations:
     .string "Careful there!\p"
@@ -581,4 +583,4 @@ BattleFrontier_OutsideWest_Text_Reparations4:
     .string "collapse would take forever!$"
 
 BattleFrontier_OutsideWest_Text_Milotic:
-	.string "Milooo!$"
+	.string "MILOTIC: Milooo!$"

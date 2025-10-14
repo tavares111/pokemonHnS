@@ -46,7 +46,8 @@ BattleTowerOutsideYoungsterText:
 	.string "POKéMON in there!$"
 
 BattleTowerOutsideBeautyText:
-	.string "You can use only three POKéMON.\p"
+	.string "In the BATTLE TENTS, you can\n"
+	.string "use only three POKéMON.\p"
 	.string "It's so hard to decide which\n"
 	.string "three should go into battle…$"
 

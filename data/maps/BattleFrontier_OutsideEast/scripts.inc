@@ -329,7 +329,9 @@ BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam:
 	.string "We're storming the BATTLE ARENA!$"
 
 BattleFrontier_OutsideEast_Text_DidScottBringYouHere:
-	.string "Did SCOTT bring you here, too?\n"
+	.string "Did SCOTT bring you here, too?\p"
+	.string "No?\p"
+	.string "But you surely know who he is!\p"
 	.string "What is it with that guy?\p"
 	.string "It sounds like he really does know\n"
 	.string "how to spot talented TRAINERS, but…\p"
