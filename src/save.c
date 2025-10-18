@@ -898,7 +898,7 @@ u8 LoadGameSave(u8 saveType)
         break;
     }
 
-#ifdef RELEASE
+#if !DEBUG
     VarSet(VAR_DEBUG_OPTIONS, 0);
 #endif
 
@@ -933,7 +933,7 @@ u8 LoadGameSave(u8 saveType)
     if (gSaveBlock1Ptr->versionId <2){ 
         FlagSet(FLAG_HIDE_OLIVINE_PORT_OAK);
         FlagSet(FLAG_HIDE_ROUTE22_GIOVANNI_SILVER);
-        FlagSet(FLAG_UNUSED_SET3);
+        FlagSet(FLAG_HIDE_MTMOON_JIRACHI);
         FlagSet(FLAG_UNUSED_SET4);
         FlagSet(FLAG_UNUSED_SET5);
         FlagSet(FLAG_UNUSED_SET6);
@@ -945,7 +945,7 @@ u8 LoadGameSave(u8 saveType)
         FlagClear(FLAG_HIDE_CERULEAN_GYM_POKEMON);
         FlagClear(FLAG_HIDE_NEWBARKTOWN_LAB_AIDE);
         FlagClear(FLAG_HIDE_AZALEA_TOWN_CUT_MASTER);
-        FlagClear(FLAG_UNUSED_UNSET6);
+        FlagClear(FLAG_SUMMONED_MTMOON_JIRACHI);
         FlagClear(FLAG_UNUSED_UNSET7);
         FlagClear(FLAG_UNUSED_UNSET8);
         FlagClear(FLAG_UNUSED_UNSET9);
@@ -961,6 +961,31 @@ u8 LoadGameSave(u8 saveType)
     if (VarGet(VAR_ROUTE27_STATE) >= 1){
         FlagSet(FLAG_VISITED_KANTO);
     } 
+    if (gSaveBlock1Ptr->versionId <3){
+        if(FlagGet(FLAG_BADGE09_GET)){
+            VarSet(VAR_SSAQUA_STATE, 7);
+        }
+        gSaveBlock1Ptr->versionId = 3;        
+    }
+    if (gSaveBlock1Ptr->versionId <4){
+        if(FlagGet(FLAG_BADGE16_GET)){
+            FlagSet(FLAG_SAFARI_ZONE_WEST_EXPANSION);
+            FlagSet(FLAG_SAFARI_ZONE_EAST_EXPANSION);
+        }
+        gSaveBlock1Ptr->versionId = 4;
+    }
+    if (gSaveBlock1Ptr->versionId <5){
+        if(VarGet(VAR_SAFARI_ZONE_GATE_STATE)<3){
+            FlagClear(FLAG_VISITED_SAFARI_ZONE_GATE);
+        }
+        gSaveBlock1Ptr->versionId = 5;
+    }
+    if (gSaveBlock1Ptr->versionId <6){
+        if(VarGet(VAR_ECRUTEAK_CITY_THEATER)==7){
+            VarSet(VAR_ECRUTEAK_CITY_THEATER, 8);
+        }
+        gSaveBlock1Ptr->versionId = 6;
+    }
     return status;
 }
 

@@ -652,7 +652,8 @@ extern const u8 gText_EVO_LEVEL_FEMALE[];
 extern const u8 gText_EVO_LEVEL_MALE[];
 extern const u8 gText_EVO_LEVEL_NIGHT[];
 extern const u8 gText_EVO_LEVEL_DAY[];
-extern const u8 gText_EVO_LEVEL_DUSK[];
+extern const u8 gText_EVO_LEVEL_TIME_MALE[];
+extern const u8 gText_EVO_LEVEL_TIME_FEMALE[];
 extern const u8 gText_EVO_ITEM_HOLD_DAY[];
 extern const u8 gText_EVO_ITEM_HOLD_NIGHT[];
 extern const u8 gText_EVO_ITEM_HOLD[];
@@ -1377,6 +1378,9 @@ extern const u8 gText_TM24AndPrice[];
 extern const u8 gText_TM13AndPrice[];
 extern const u8 gText_50CoinsAndPrice[];
 extern const u8 gText_500CoinsAndPrice[];
+extern const u8 gText_1000CoinsAndPrice[];
+extern const u8 gText_2500CoinsAndPrice[];
+extern const u8 gText_5000CoinsAndPrice[];
 extern const u8 gText_Excellent2[];
 extern const u8 gText_NotSoGood[];
 extern const u8 gText_LilycoveCity[];
@@ -3265,6 +3269,7 @@ extern const u8 gText_ExpShareOff[];
 extern const u8 gText_infiniteRepelOn[];
 extern const u8 gText_infiniteRepelOff[];
 extern const u8 gText_infiniteCandies[];
+extern const u8 gText_HealingHeart[];
 
 //tx_randomizer_and_challenges
 extern const u8 gText_NuzlockeCantThrowPokeBallRoute[];

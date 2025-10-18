@@ -5723,4 +5723,7 @@ extern const u32 gTrainerPalette_PyramidKingBrandon[];
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 
+extern const u32 gItemIcon_HealingHeart[];
+extern const u32 gItemIconPalette_HealingHeart[];
+
 #endif //GUARD_GRAPHICS_H

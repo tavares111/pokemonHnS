@@ -581,7 +581,7 @@ const u8 gText_PkmnGotOverInfatuation[] = _("{STR_VAR_1} got over its\ninfatuati
 const u8 gText_ThrowAwayItem[] = _("Throw away this\n{STR_VAR_1}?");
 const u8 gText_ItemThrownAway[] = _("The {STR_VAR_1}\nwas thrown away.{PAUSE_UNTIL_PRESS}");
 const u8 gText_TeachWhichPokemon2[] = _("Teach which POKéMON?"); // Unused
-const u8 gText_ChoosePokemon[] = _("Choose POKéMON for {STR_VAR_2}.");
+const u8 gText_ChoosePokemon[] = _("Choose a POKéMON.");
 const u8 gText_MoveToWhere[] = _("Move to where?");
 const u8 gText_TeachWhichPokemon[] = _("Teach which POKéMON?");
 const u8 gText_UseOnWhichPokemon[] = _("Use on which POKéMON?");
@@ -849,8 +849,11 @@ const u8 gText_MudkipDollAndPrice[] = _("MUDKIP DOLL   1,000 COINS");
 const u8 gText_RegirockDollAndPrice[] = _("REGIROCK DOLL   9,000 C.");
 const u8 gText_RegiceDollAndPrice[] = _("REGICE DOLL       9,000 C.");
 const u8 gText_RegisteelDollAndPrice[] = _("REGISTEEL DOLL 9,000 C.");
-const u8 gText_50CoinsAndPrice[] = _("  50 COINS      ¥500");
-const u8 gText_500CoinsAndPrice[] = _("500 COINS   ¥5,000");
+const u8 gText_50CoinsAndPrice[] = _  ("50 COINS{CLEAR_TO 0x4F}¥500");
+const u8 gText_500CoinsAndPrice[] = _ ("500 COINS{CLEAR_TO 0x4F}¥5,000");
+const u8 gText_1000CoinsAndPrice[] = _("1,000 COINS{CLEAR_TO 0x4F}¥10,000");
+const u8 gText_2500CoinsAndPrice[] = _("2,500 COINS{CLEAR_TO 0x4F}¥25,000");
+const u8 gText_5000CoinsAndPrice[] = _("5,000 COINS{CLEAR_TO 0x4F}¥50,000");
 const u8 gText_Excellent2[] = _("Excellent");
 const u8 gText_NotSoGood[] = _("Not so good");
 const u8 gText_RedShard[] = _("RED SHARD");
@@ -1435,11 +1438,11 @@ const u8 gText_Moon[] =         _("MOON    / CHESTO / (DRK/GST/PSN)");
 const u8 gText_Fast[] =         _("FAST    / ASPEAR / (ELC/FIG/FIR)");
 const u8 gText_LevelBall[] =    _("LEVEL  / PERSIM / (NRM/FLY/ICE)");
 
-const u8 gText_Abra[] = _("ABRA 120 COINS");
-const u8 gText_Clefairy[] = _("CLEFAIRY 500 COINS");
-const u8 gText_Munchlax[] = _("MUNCHLAX 2800 COINS");
-const u8 gText_Dratini[] = _("DRATINI 5500 COINS");
-const u8 gText_Porygon[] = _("PORYGON 6500 COINS");
+const u8 gText_Abra[] = _("ABRA{CLEAR_TO 0x40}120 COINS");
+const u8 gText_Clefairy[] = _("CLEFAIRY{CLEAR_TO 0x40}500 COINS");
+const u8 gText_Munchlax[] = _("MUNCHLAX{CLEAR_TO 0x40}2,800 COINS");
+const u8 gText_Dratini[] = _("DRATINI{CLEAR_TO 0x40}5,500 COINS");
+const u8 gText_Porygon[] = _("PORYGON{CLEAR_TO 0x40}6,500 COINS");
 
 const u8 gText_Pal[] = _("Pal");
 const u8 gText_Underling[] = _("Underling");
@@ -2083,6 +2086,7 @@ const u8 gText_infiniteRepelOn[] = _("Turned on the Inf. Repel.{PAUSE_UNTIL_PRES
 const u8 gText_infiniteRepelOff[] = _("Turned off the Inf. Repel.{PAUSE_UNTIL_PRESS}");
 // Inf. Candies
 const u8 gText_infiniteCandies[] = _("You obtained 999 RARE\nCANDIES!{PAUSE_UNTIL_PRESS}");
+const u8 gText_HealingHeart[] = _("The soft HEALING HEART\nfully healed your party!{PAUSE 120}{WAIT_SE}");
 
 //tx_randomizer_and_challenges
 const u8 gText_NuzlockeCantThrowPokeBallRoute[]             = _("You have already used your encounter\nfor this area!{PAUSE_UNTIL_PRESS}");
@@ -2187,7 +2191,8 @@ const u8 gText_EVO_LEVEL_FEMALE[]                   = _("LvlUp to {STR_VAR_2}, i
 const u8 gText_EVO_LEVEL_MALE[]                     = _("LvlUp to {STR_VAR_2}, is male");
 const u8 gText_EVO_LEVEL_NIGHT[]                    = _("LvlUp to {STR_VAR_2}, night");
 const u8 gText_EVO_LEVEL_DAY[]                      = _("LvlUp to {STR_VAR_2}, day");
-const u8 gText_EVO_LEVEL_DUSK[]                     = _("LvlUp to {STR_VAR_2}, morning (6-9AM)");
+const u8 gText_EVO_LEVEL_TIME_MALE[]                = _("LvlUp to {STR_VAR_2},♂,morning (6-9AM)");
+const u8 gText_EVO_LEVEL_TIME_FEMALE[]              = _("LvlUp to {STR_VAR_2}, ♀, morning (6-9AM)");
 const u8 gText_EVO_ITEM_HOLD_DAY[]                  = _("LvlUp, holds {STR_VAR_2}, day");
 const u8 gText_EVO_ITEM_HOLD_NIGHT[]                = _("LvlUp, holds {STR_VAR_2}, night");
 const u8 gText_EVO_ITEM_HOLD[]                      = _("LvlUp, holds {STR_VAR_2}");

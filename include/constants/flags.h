@@ -703,11 +703,11 @@
 #define FLAG_HIDE_CINNABAR_BLAINE  0x28F 
 #define FLAG_HIDE_DOJO_BLAINE  0x290 
 #define FLAG_HIDE_DOJO_BLUE  0x291 
-#define FLAG_UNUSED_0x293  0x293 // Unused Flag
-#define FLAG_UNUSED_0x294  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
-#define FLAG_UNUSED_0x297  0x297 // Unused Flag
+#define FLAG_UNUSED_0x296  0x296 // Temporal, will get deleted
+#define FLAG_SHINY_STARTER_1  0x294 // Flag for shiny starters, Cyndaquil
+#define FLAG_SHINY_STARTER_2  0x295 // Flag for shiny starters, Chikorita
+#define FLAG_SHINY_STARTER_3  0x296 // Flag for shiny starters, Totodile
+#define FLAG_FORCE_SHINY   0x297 // Needed for shiny starters, not used anywhere else
 #define FLAG_UNUSED_0x298  0x298 // Unused Flag
 #define FLAG_UNUSED_0x299  0x299 // Unused Flag
 #define FLAG_UNUSED_0x29A  0x29A // Unused Flag
@@ -898,7 +898,7 @@
 #define FLAG_HIDE_ILEX_FOREST_SECOND_CELEBI                         0x34F
 #define FLAG_HIDE_OLIVINE_PORT_OAK                                            0x350
 #define FLAG_HIDE_ROUTE22_GIOVANNI_SILVER                                            0x351
-#define FLAG_UNUSED_SET3                                            0x352
+#define FLAG_HIDE_MTMOON_JIRACHI                                            0x352
 #define FLAG_UNUSED_SET4                                            0x353
 #define FLAG_UNUSED_SET5                                            0x354
 #define FLAG_UNUSED_SET6                                            0x355
@@ -910,7 +910,7 @@
 #define FLAG_HIDE_CERULEAN_GYM_POKEMON                                          0x35B
 #define FLAG_HIDE_NEWBARKTOWN_LAB_AIDE                                          0x35C
 #define FLAG_HIDE_AZALEA_TOWN_CUT_MASTER                                          0x35D
-#define FLAG_UNUSED_UNSET6                                          0x35E
+#define FLAG_SUMMONED_MTMOON_JIRACHI                                          0x35E
 #define FLAG_UNUSED_UNSET7                                          0x35F
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_1           0x360
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_ALT_2           0x361
@@ -1403,7 +1403,7 @@
 #define FLAG_SYS_SAFARI_MODE                        (SYSTEM_FLAGS + 0x2C)
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
-#define FLAG_SYS_BUG_CONTEST_MODE                           (SYSTEM_FLAGS + 0x2E) // Unused Flag
+#define FLAG_SYS_BUG_CONTEST_MODE                           (SYSTEM_FLAGS + 0x2E) 
 #define FLAG_UNUSED_0x88F                           (SYSTEM_FLAGS + 0x2F) // Unused Flag
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
@@ -1648,7 +1648,9 @@
 #define FLAG_ENABLE_MULTI_CORRIDOR_DOOR         (SPECIAL_FLAGS_START + 0x2)
 #define FLAG_SPECIAL_FLAG_UNUSED_0x4003         (SPECIAL_FLAGS_START + 0x3) // Unused Flag
 #define FLAG_STORING_ITEMS_IN_PYRAMID_BAG       (SPECIAL_FLAGS_START + 0x4)
-#define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5) // When set, applymovement does not put the follower inside a pokeball
+// When set, `applymovement` does not hide follower pokemon;
+// Also, scripted movements on the player will move follower(s), too
+#define FLAG_SAFE_FOLLOWER_MOVEMENT             (SPECIAL_FLAGS_START + 0x5)
 // FLAG_SPECIAL_FLAG_0x4005 - 0x407F also exist and are unused
 #define SPECIAL_FLAGS_END                       (SPECIAL_FLAGS_START + 0x7F)
 #define NUM_SPECIAL_FLAGS                       (SPECIAL_FLAGS_END - SPECIAL_FLAGS_START + 1)
