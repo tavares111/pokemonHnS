@@ -240,13 +240,14 @@ const u8 NuzlockeLUT[] =
     [MAPSEC_PALLET_TOWN]      = 0x5B,
     [MAPSEC_VIRIDIAN_CITY]    = 0x5C,
     [MAPSEC_PEWTER_CITY]      = 0x5D,
-    [MAPSEC_LAVENDER_TOWN]    = 0x5E
+    [MAPSEC_LAVENDER_TOWN]    = 0x5E,
+    [MAPSEC_BATTLE_FRONTIER]  = 0x5F
 };
 
 //tx_randomizer_and_challenges
 u8 NuzlockeFlagSet(u16 mapsec) // @Kurausukun
 {
-    u8 id = NuzlockeLUT[mapsec];
+    u16 id = NuzlockeLUT[mapsec];
     u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
     u8 i;
     if (ptr)
@@ -262,7 +263,7 @@ u8 NuzlockeFlagSet(u16 mapsec) // @Kurausukun
 }
 u8 NuzlockeFlagClear(u16 mapsec) // @Kurausukun
 {
-    u8 id = NuzlockeLUT[mapsec];
+    u16 id = NuzlockeLUT[mapsec];
     u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
     if (ptr)
         * ptr &= ~(1 << (id & 7));
@@ -270,7 +271,7 @@ u8 NuzlockeFlagClear(u16 mapsec) // @Kurausukun
 }
 u8 NuzlockeFlagGet(u16 mapsec) // @Kurausukun
 {
-    u8 id = NuzlockeLUT[mapsec];
+    u16 id = NuzlockeLUT[mapsec];
     u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
 
     #ifndef NDEBUG
