@@ -90,8 +90,8 @@ static void GetDoublesOpponentHealthbox(struct CompressedSpriteSheet out[2])
     }
     else
     {
-        out[0] = (struct CompressedSpriteSheet){ gHealthboxDoublesOpponentGfxGen4, 0x800, TAG_HEALTHBOX_OPPONENT1_TILE };
-        out[1] = (struct CompressedSpriteSheet){ gHealthboxDoublesOpponentGfxGen4, 0x800, TAG_HEALTHBOX_OPPONENT2_TILE };
+        out[0] = (struct CompressedSpriteSheet){ gHealthboxDoublesOpponentGfxGen3, 0x800, TAG_HEALTHBOX_OPPONENT1_TILE };
+        out[1] = (struct CompressedSpriteSheet){ gHealthboxDoublesOpponentGfxGen3, 0x800, TAG_HEALTHBOX_OPPONENT2_TILE };
     }
 }
 
