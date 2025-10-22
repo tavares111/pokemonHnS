@@ -2105,10 +2105,9 @@ static u16 GetTutorMove(u8 tutor)
 
 bool8 CanLearnTutorMove(u16 species, u8 tutor)
 {
-    if (sTutorLearnsets[species] & (1 << tutor))
+    if ((sTutorLearnsets[species] & (1ULL << tutor)) != 0)
         return TRUE;
-    else
-        return FALSE;
+    return FALSE;
 }
 
 //HnS Gpt function for headbutt

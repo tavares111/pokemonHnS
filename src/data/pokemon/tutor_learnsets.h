@@ -36,9 +36,9 @@ const u16 gTutorMoves[TUTOR_MOVE_COUNT] =
     [TUTOR_MOVE_HYDRO_CANNON] = MOVE_HYDRO_CANNON,
 };
 
-#define TUTOR(move) (1u << (TUTOR_##move))
+#define TUTOR(move) (1ULL << (TUTOR_##move))
 
-static const u32 sTutorLearnsets[] =
+static const u64 sTutorLearnsets[] =
 {
     [SPECIES_NONE]             = (0),
 
