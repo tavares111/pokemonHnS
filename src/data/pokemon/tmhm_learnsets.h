@@ -5951,6 +5951,7 @@ const union {
         .THIEF = TRUE,
         .SNATCH = TRUE,
         .OVERHEAT = TRUE,
+        .CUT = TRUE,
         .ROCK_SMASH = TRUE,
     } },
 
@@ -5979,6 +5980,7 @@ const union {
         .THIEF = TRUE,
         .SNATCH = TRUE,
         .OVERHEAT = TRUE,
+        .CUT = TRUE,
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
     } },
