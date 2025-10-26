@@ -940,6 +940,8 @@ const union {
         .REST = TRUE,
         .ATTRACT = TRUE,
         .OVERHEAT = TRUE,
+        .SOLAR_BEAM = TRUE,
+        .PSYCHIC = TRUE, 
     } },
 
     [SPECIES_JIGGLYPUFF] = { .learnset = {
