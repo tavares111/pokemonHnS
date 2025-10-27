@@ -4761,6 +4761,7 @@ static const u16 sBeautiflyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(37, MOVE_RAGE),
     LEVEL_UP_MOVE(38, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(45, MOVE_AIR_SLASH),
     LEVEL_UP_END};
 
 static const u16 sCascoonLevelUpLearnset[] = {
