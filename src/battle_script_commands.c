@@ -3950,7 +3950,7 @@ static void Cmd_getexp(void)
                 {
                     if((Random() % 3) == 1)
                         PlayBGM(MUS_HG_VICTORY_WILD); 
-                    if((Random() % 3) == 2)
+                    else if((Random() % 3) == 2)
                         PlayBGM(MUS_HG_VICTORY_WILD); 
                     else
                         PlayBGM(MUS_HG_VICTORY_WILD); 

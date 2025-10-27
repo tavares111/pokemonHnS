@@ -5763,7 +5763,7 @@ static void HandleEndTurn_BattleWon(void)
             {
                 if((Random() % 3) == 1)
                     PlayBGM(MUS_HG_VICTORY_FRONTIER_BRAIN);
-                if((Random() % 3) == 2)
+                else if((Random() % 3) == 2)
                     PlayBGM(MUS_HG_VICTORY_FRONTIER_BRAIN);
                 else
                     PlayBGM(MUS_HG_VICTORY_FRONTIER_BRAIN);
@@ -5781,7 +5781,7 @@ static void HandleEndTurn_BattleWon(void)
             {
                 if((Random() % 3) == 1)
                     PlayBGM(MUS_HG_VICTORY_TRAINER);
-                if((Random() % 3) == 2)
+                else if((Random() % 3) == 2)
                     PlayBGM(MUS_HG_VICTORY_TRAINER);
                 else
                     PlayBGM(MUS_HG_VICTORY_TRAINER);
@@ -5857,7 +5857,7 @@ static void HandleEndTurn_BattleWon(void)
                     {
                         if((Random() % 3) == 1)
                             PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
-                        if((Random() % 3) == 2)
+                        else if((Random() % 3) == 2)
                             PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
                         else
                             PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
@@ -5876,7 +5876,7 @@ static void HandleEndTurn_BattleWon(void)
                 {
                     if((Random() % 3) == 1)
                         PlayBGM(MUS_HG_VICTORY_TRAINER);
-                    if((Random() % 3) == 2)
+                    else if((Random() % 3) == 2)
                         PlayBGM(MUS_HG_VICTORY_TRAINER);
                     else
                         PlayBGM(MUS_HG_VICTORY_TRAINER);
