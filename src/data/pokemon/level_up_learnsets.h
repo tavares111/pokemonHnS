@@ -7552,7 +7552,6 @@ static const u16 sWeavileLevelUpLearnset[] = {
 
 static const u16 sYanmegaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(0, MOVE_WING_ATTACK),
-    LEVEL_UP_MOVE(1, MOVE_TACKLE),
     LEVEL_UP_MOVE(1, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(1, MOVE_FORESIGHT),
     LEVEL_UP_MOVE(1, MOVE_AIR_SLASH),
