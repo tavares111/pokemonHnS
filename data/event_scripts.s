@@ -1990,3 +1990,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route19_Cave/scripts.inc"
 
 	.include "data/maps/WhirlIslands_LugiaChamber/scripts.inc"
+
+	.include "data/maps/WhirlIslands_Descent/scripts.inc"
+
+	.include "data/maps/WhirlIslands_B3F/scripts.inc"

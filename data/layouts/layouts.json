@@ -5504,7 +5504,7 @@
     {
       "id": "LAYOUT_WHIRL_ISLANDS_1F",
       "name": "WhirlIslands_1F_Layout",
-      "width": 89,
+      "width": 60,
       "height": 60,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_WhirlIslands",
@@ -5514,8 +5514,8 @@
     {
       "id": "LAYOUT_WHIRL_ISLANDS_B1F",
       "name": "WhirlIslands_B1F_Layout",
-      "width": 94,
-      "height": 40,
+      "width": 70,
+      "height": 47,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_B1F/border.bin",
@@ -5524,8 +5524,8 @@
     {
       "id": "LAYOUT_WHIRL_ISLANDS_B2F",
       "name": "WhirlIslands_B2F_Layout",
-      "width": 50,
-      "height": 47,
+      "width": 20,
+      "height": 10,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_B2F/border.bin",
@@ -8750,6 +8750,26 @@
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_LugiaChamber/border.bin",
       "blockdata_filepath": "data/layouts/WhirlIslands_LugiaChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_WHIRL_ISLANDS_DESCENT",
+      "name": "WhirlIslands_Descent_Layout",
+      "width": 70,
+      "height": 100,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_WhirlIslands",
+      "border_filepath": "data/layouts/WhirlIslands_Descent/border.bin",
+      "blockdata_filepath": "data/layouts/WhirlIslands_Descent/map.bin"
+    },
+    {
+      "id": "LAYOUT_WHIRL_ISLANDS_B3F",
+      "name": "WhirlIslands_B3F_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_NorthEast",
+      "secondary_tileset": "gTileset_WhirlIslands",
+      "border_filepath": "data/layouts/WhirlIslands_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/WhirlIslands_B3F/map.bin"
     }
   ]
 }
