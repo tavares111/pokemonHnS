@@ -5013,6 +5013,7 @@ const union {
         .SECRET_POWER = TRUE,
         .REST = TRUE,
         .ATTRACT = TRUE,
+        .FLAMETHROWER = TRUE,
         .CUT = TRUE,
         .FLASH = TRUE,
     } },
