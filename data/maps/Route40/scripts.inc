@@ -1,6 +1,15 @@
 Route40_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, OlivineCity_MapScript_OnTransition
+	map_script MAP_SCRIPT_ON_TRANSITION, Route40_MapScript_OnTransition
 	.byte 0
+
+Route40_MapScript_OnTransition::
+	callnative SetTimeBasedEncounters
+	goto_if_ge VAR_OLIVINE_CITY_STATE, 5, Route40_MapScript_ClearWeather
+	end
+
+Route40_MapScript_ClearWeather::
+	setweather WEATHER_NONE
+	end
 
 Route40_EventScript_Simon::
 	trainerbattle_single TRAINER_SIMON, Route40_Text_SwimmermSimonSeen, Route40_Text_SwimmermSimonBeaten
