@@ -4129,6 +4129,9 @@ static const u16 sTyrogueLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(1, MOVE_FORESIGHT),
+    LEVEL_UP_MOVE(8, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(12, MOVE_KARATE_CHOP),
+    LEVEL_UP_MOVE(20, MOVE_COUNTER),
     LEVEL_UP_END};
 
 static const u16 sHitmontopLevelUpLearnset[] = {
