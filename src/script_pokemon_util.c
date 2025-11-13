@@ -227,6 +227,10 @@ u32 GenerateShinyPersonalityForOtId(u32 otId)
 void CreateShinyScriptedMon(u16 species, u8 level, u16 item)
 {
     u8 heldItem[2];
+    if (gSaveBlock1Ptr->tx_Random_Static)
+        species = GetSpeciesRandomSeeded(species, TX_RANDOM_T_STATIC, 0);
+    if (gSaveBlock1Ptr->tx_Random_Items)
+        item = RandomItemId(item);
     SetNuzlockeChecks();
     ZeroEnemyPartyMons();
 
