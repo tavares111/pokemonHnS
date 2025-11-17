@@ -1953,7 +1953,7 @@ void CB2_WhiteOut(void)
     {
         FieldClearVBlankHBlankCallbacks();
         StopMapMusic();
-        if (gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore && !FlagGet(FLAG_IS_CHAMPION)) //tx_randomizer_and_challenges
+        if (gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore && !FlagGet(FLAG_DEFEATED_RED)) //tx_randomizer_and_challenges
         {
             ClearSaveData();
             DoSoftReset();
@@ -1983,7 +1983,7 @@ void CB2_BugContestWhiteOut(void){
     {
         FieldClearVBlankHBlankCallbacks();
         StopMapMusic();
-        if (gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore && !FlagGet(FLAG_IS_CHAMPION)) //tx_randomizer_and_challenges
+        if (gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore && !FlagGet(FLAG_DEFEATED_RED)) //tx_randomizer_and_challenges
         {
             ClearSaveData();
             DoSoftReset();
