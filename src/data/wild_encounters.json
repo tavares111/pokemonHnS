@@ -51902,6 +51902,36 @@
               }
             ]
           },
+          "rock_smash_mons": {
+            "encounter_rate": 60,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_LEDYBA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_LEDYBA"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 30,
             "mons": [
@@ -51954,36 +51984,6 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_TENTACOOL"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 60,
-            "mons": [
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_EXEGGCUTE"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_SEEDOT"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
               }
             ]
           }
@@ -52111,6 +52111,36 @@
               }
             ]
           },
+          "rock_smash_mons": {
+            "encounter_rate": 60,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_PINECO"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_EXEGGCUTE"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_LEDYBA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_LEDYBA"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 30,
             "mons": [
@@ -52163,36 +52193,6 @@
                 "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_TENTACOOL"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 60,
-            "mons": [
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_EXEGGCUTE"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_SEEDOT"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
               }
             ]
           }
