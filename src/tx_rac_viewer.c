@@ -154,7 +154,7 @@ static const u8 sText_Nuz_Mode[]             = _("NUZLOCKE MODE");
 static const u8 sText_Nuz_SpeciesClause[]    = _("DUPES CLAUSE");
 static const u8 sText_Nuz_ShinyClause[]      = _("SHINY CLAUSE");
 static const u8 sText_Nuz_Nicknaming[]       = _("NICKNAMES");
-static const u8 sText_Nuz_Deletion[]         = _("FAINTING");
+static const u8 sText_Nuz_Fainting[]         = _("FAINTING");
 static const u8 sText_Nuz_RareCandy[]        = _("INF RARE CANDY");
 
 // page 5 (Difficulty) — labels
@@ -163,10 +163,10 @@ static const u8 sText_Diff_LevelCap[]        = _("LEVEL CAP");
 static const u8 sText_Diff_ExpMult[]         = _("EXP. MULTIPLIER");
 static const u8 sText_Diff_NoItemPlayer[]    = _("PLAYER ITEMS");
 static const u8 sText_Diff_NoItemTrainer[]   = _("TRAINER ITEMS");
-static const u8 sText_Diff_MaxPartyIVs[]     = _("PLAYER IVs");
-static const u8 sText_Diff_ScalingIVs[]      = _("TRAINER IVs");
-static const u8 sText_Diff_NoEVs[]           = _("PLAYER EVs");
-static const u8 sText_Diff_ScalingEVs[]      = _("TRAINER EVs");
+static const u8 sText_Diff_PartyIVs[]        = _("PLAYER IVs");
+static const u8 sText_Diff_TrainerIVs[]      = _("TRAINER IVs");
+static const u8 sText_Diff_PlayerEVs[]       = _("PLAYER EVs");
+static const u8 sText_Diff_TrainerEVs[]      = _("TRAINER EVs");
 static const u8 sText_Diff_LessEscapes[]     = _("LESS ESCAPES");
 static const u8 sText_Diff_EscapeRopeDig[]   = _("ESC. ROPE / DIG");
 
@@ -221,18 +221,18 @@ static const u8 sEM_0x[]   = _("0x");
 static const u8 *const sText_Diff_ExpMult_Strings[] = {
     sEM_1x, sEM_15x, sEM_2x, sEM_0x
 };
-static const u8 sNE_Yes[]   = _("YES");
-static const u8 sNE_No[]    = _("NO");
-static const u8 sNE_NoHP[]  = _("NO (HP)");
-static const u8 *const sText_Diff_NoEVs_Strings[] = {
-    sNE_Yes, sNE_No, sNE_NoHP
+static const u8 sIVs_Yes[]   = _("YES");
+static const u8 sIVs_No[]    = _("NO");
+static const u8 sIVs_NoHP[]  = _("NO (HP)");
+static const u8 *const sText_Diff_PlayerIVs_Strings[] = {
+    sIVs_Yes, sIVs_No, sIVs_NoHP
 };
-static const u8 sSC_Off[]   = _("OFF");
-static const u8 sSC_Scale[] = _("SCALE");
-static const u8 sSC_Hard[]  = _("HARD");
-static const u8 sSC_Extreme[]  = _("EXTREME");
-static const u8 *const sText_Diff_Scaling_Strings[] = {
-    sSC_Off, sSC_Scale, sSC_Hard, sSC_Extreme
+static const u8 sTrainerEVs_Off[]   = _("OFF");
+static const u8 sTrainerEVs_Scale[] = _("SCALE");
+static const u8 sTrainerEVs_Hard[]  = _("HARD");
+static const u8 sTrainerEVs_Extreme[]  = _("EXTREME");
+static const u8 *const sText_TrainerEV_Strings[] = {
+    sTrainerEVs_Off, sTrainerEVs_Scale, sTrainerEVs_Hard, sTrainerEVs_Extreme
 };
 static const u8 sEX_Off[]  = _("OFF");
 static const u8 sEX_5x[]   = _("x5");
@@ -468,14 +468,14 @@ static u8 GetSel_Nuz_RareCandy(void)       { return gSaveBlock1Ptr->tx_Nuzlocke_
 static u8 GetSel_Diff_PartyLimit(void)      { return gSaveBlock1Ptr->tx_Challenges_PartyLimit; }      // 0..5 (OFF,5,4,3,2,1)
 static u8 GetSel_Diff_LevelCap(void)        { return gSaveBlock1Ptr->tx_Challenges_LevelCap; }        // 0..2 (Off, Easy, Hard)
 static u8 GetSel_Diff_ExpMult(void)         { return gSaveBlock1Ptr->tx_Challenges_ExpMultiplier; }   // 0..3 (1x,1.5x,2x,0x)
-static u8 GetSel_Diff_MaxPartyIVs(void)     { return gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs; }
-static u8 GetSel_Diff_ScalingIVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs; } // 0..2
-static u8 GetSel_Diff_ScalingEVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs; } // 0..2
+static u8 GetSel_Diff_PlayerIVs(void)       { return gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs; }     //0..2 (Yes, No, No(HP))
+static u8 GetSel_Diff_TrainerIVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs; } // 0..2 (Off, Scale, Hard)
+static u8 GetSel_Diff_TrainerEVs(void)      { return gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs; } // 0..3 (Off, Scale, Hard, Extreme)
 
 // Plain bool rows (normalize to 0/1 for the shared bool renderer)
-static u8 GetSel_Diff_NoItemPlayer(void)    { return gSaveBlock1Ptr->tx_Challenges_NoItemPlayer ? 1 : 0; }
-static u8 GetSel_Diff_NoItemTrainer(void)   { return gSaveBlock1Ptr->tx_Challenges_NoItemTrainer ? 1 : 0; }
-static u8 GetSel_Diff_NoEVs(void)           { return gSaveBlock1Ptr->tx_Challenges_NoEVs; }           // 0..2 (Yes,No,No(HP))
+static u8 GetSel_Diff_NoItemPlayer(void)    { return gSaveBlock1Ptr->tx_Challenges_NoItemPlayer ? 1 : 0; } //Yes/No
+static u8 GetSel_Diff_NoItemTrainer(void)   { return gSaveBlock1Ptr->tx_Challenges_NoItemTrainer ? 1 : 0; } //Yes/No
+static u8 GetSel_Diff_PlayerEVs(void)       { return gSaveBlock1Ptr->tx_Challenges_NoEVs ? 1 : 0; } //Yes/No
 static u8 GetSel_Diff_EscapeRopeDig(void)   { return (gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig==0) ? 1 : 0; }//Inverted
 static u8 GetSel_Diff_LessEscapes(void)     { return gSaveBlock1Ptr->tx_Challenges_LessEscapes ? 1 : 0; } //Yes/No
 
@@ -561,7 +561,7 @@ static const struct ViewerBoolRow sBoolRows_Page4[] = {
     { sText_Nuz_SpeciesClause, GetSel_Nuz_SpeciesClause },
     { sText_Nuz_ShinyClause,   GetSel_Nuz_ShinyClause   },
     { sText_Nuz_Nicknaming,    GetSel_Nuz_Nicknaming    },
-    { sText_Nuz_Deletion,      GetSel_Nuz_Deletion      },
+    { sText_Nuz_Fainting,      GetSel_Nuz_Deletion      },
     { sText_Nuz_RareCandy,     GetSel_Nuz_RareCandy     },
 };
 
@@ -573,10 +573,10 @@ static const struct ViewerBoolRow sBoolRows_Page5[] = {
     { sText_Diff_ExpMult,       NULL }, // idx 2 — single-value
     { sText_Diff_NoItemPlayer,  GetSel_Diff_NoItemPlayer  }, // idx 3
     { sText_Diff_NoItemTrainer, GetSel_Diff_NoItemTrainer }, // idx 4
-    { sText_Diff_MaxPartyIVs,   NULL }, // idx 5
-    { sText_Diff_ScalingIVs,    NULL }, // idx 6 — single-value
-    { sText_Diff_NoEVs,         GetSel_Diff_NoEVs }, // idx 7 — single-value
-    { sText_Diff_ScalingEVs,    NULL }, // idx 8 — single-value
+    { sText_Diff_PartyIVs,      NULL }, // idx 5
+    { sText_Diff_TrainerIVs,    NULL }, // idx 6 — single-value
+    { sText_Diff_PlayerEVs,     GetSel_Diff_PlayerEVs }, // idx 7 — single-value
+    { sText_Diff_TrainerEVs,    NULL }, // idx 8 — single-value
     { sText_Diff_LessEscapes,   GetSel_Diff_LessEscapes  }, // idx 9
     { sText_Diff_EscapeRopeDig, GetSel_Diff_EscapeRopeDig}, // idx 10
 };
@@ -768,7 +768,7 @@ static void Viewer_DrawRow_Page4(u8 visRow, u16 idx)
             const int y = visRow * 16;
             Viewer_ClearRow(visRow, selected);
             AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
-                                        sColorLeftActive, TEXT_SKIP_DRAW, sText_Nuz_Deletion);
+                                        sColorLeftActive, TEXT_SKIP_DRAW, sText_Nuz_Fainting);
             u8 sel = GetSel_Nuz_Deletion();
             const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "CEMETERY"
             const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "RELEASE"
@@ -851,16 +851,16 @@ static void Viewer_DrawRow_Page5(u8 visRow, u16 idx)
     }
     case 5: //Player IVs (YES/NO/NO(HP))
     {
-        u8 v = GetSel_Diff_MaxPartyIVs();
+        u8 v = GetSel_Diff_PlayerIVs();
         if (v > 2) v = 0;
-        Viewer_DrawSingleValueRow(visRow, sText_Diff_MaxPartyIVs, sText_Diff_NoEVs_Strings[v], selected);
+        Viewer_DrawSingleValueRow(visRow, sText_Diff_PartyIVs, sText_Diff_PlayerIVs_Strings[v], selected);
         break;
     }
     case 6: // TRAINER IVs (OFF/SCALE/HARD)
     {
-        u8 v = GetSel_Diff_ScalingIVs();
+        u8 v = GetSel_Diff_TrainerIVs();
         if (v > 2) v = 0;
-        Viewer_DrawSingleValueRow(visRow, sText_Diff_ScalingIVs, sText_Diff_Scaling_Strings[v], selected);
+        Viewer_DrawSingleValueRow(visRow, sText_Diff_TrainerIVs, sText_TrainerEV_Strings[v], selected);
         break;
     }
     case 7: // PLAYER EVs (Yes/No)
@@ -869,8 +869,8 @@ static void Viewer_DrawRow_Page5(u8 visRow, u16 idx)
         const int y = visRow * 16;
         Viewer_ClearRow(visRow, selected);
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
-                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_NoEVs);
-        u8 sel = GetSel_Diff_NoEVs();
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_Diff_PlayerEVs);
+        u8 sel = GetSel_Diff_PlayerEVs();
         const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "YES"
         const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "NO"
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
@@ -882,9 +882,9 @@ static void Viewer_DrawRow_Page5(u8 visRow, u16 idx)
     }
     case 8: // TRAINER EVs (Off/Scale/Hard/Extreme)
     {
-        u8 v = GetSel_Diff_ScalingEVs();
+        u8 v = GetSel_Diff_TrainerEVs();
         if (v > 3) v = 0;
-        Viewer_DrawSingleValueRow(visRow, sText_Diff_ScalingEVs, sText_Diff_Scaling_Strings[v], selected);
+        Viewer_DrawSingleValueRow(visRow, sText_Diff_TrainerEVs, sText_TrainerEV_Strings[v], selected);
         break;
     }
     case 10: // Escape Rope & Dig (Yes/No)
