@@ -9784,7 +9784,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
     u8 holdEffect;
     int i, multiplier;
 
-    if (gSaveBlock1Ptr->tx_Challenges_NoEVs && !FlagGet(FLAG_IS_CHAMPION))
+    if (gSaveBlock1Ptr->tx_Challenges_NoEVs && !FlagGet(FLAG_DEFEATED_RED))
         return;
 
     for (i = 0; i < NUM_STATS; i++)
