@@ -743,7 +743,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_PAUL] =
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("PAUL"),
         .items = {},
@@ -756,7 +756,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_CODY] =
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("CODY"),
         .items = {},
@@ -769,7 +769,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_MIKE] =
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("MIKE"),
         .items = {},
@@ -938,7 +938,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_DARIN] =
     {
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
         .trainerPic = TRAINER_PIC_DRAGON_TAMER,
         .trainerName = _("DARIN"),
         .items = {},
@@ -5190,7 +5190,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_THOM_AND_KAE] =
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("THOM & KAE"),
         .items = {},
@@ -5202,7 +5202,7 @@ const struct Trainer gTrainers[] = {
     [TRAINER_DUFF_AND_EDA] =
     {
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
         .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
         .trainerName = _("DUFF & EDA"),
         .items = {},
